@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="icon" type="image/x-icon" href="assests/images/favicon_img.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <nav>
+            <span><img  src="assests/images/logo.svg" alt=""></span>
+            <div>
+                <!-- <img src="assests/images/lang.svg" alt=""> -->
+                <select name = "English" id="langbtn">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+                <button id="signin">Sign In</button>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class="hero">
+            <span>Unlimited movies, TV shows and more</span>
+            <span>Watch anywhere. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email or mobile number to create or restart your membership.</span>
+            <div>
+                <input type="text" placeholder="Email Address or Mobile Number" name="" id="">
+                <button>Get Started ></button>
+            </div>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+
+    <div class="sec1">
+        <div class="sec_pad">
+            <span class="head_line">Enjoy on your TV</span><br><br>
+            <span class="sub_head">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</span>
+        </div>
+        <div class="sec_img_vdo">
+            <img class="sec_img" src="assests/images/video_background_tv.png" alt="">
+            <video src="assests/videos/video-tv-in-0819.m4v" autoplay loop muted></video>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+
+    <div class="sec2">
+        <div>
+            <img class="sec_img" src="assests/images/mobile_3.jpg" width="100%" alt="">
+        </div>
+        <div class="sec_pad">
+            <span class="head_line">Download your shows to watch offline</span><br><br>
+            <span class="sub_head">Save your favourites easily and always have something to watch.</span>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+
+    <div class="sec3">
+        <div class="sec_pad">
+            <span class="head_line">Watch everywhere</span><br><br>
+            <span class="sub_head">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+        </div>
+        <div>
+            <img class="sec_img" src="assests/images/device-pile-in_4.png" width="100%" alt="">
+            <video src="assests/videos/video-devices-in.m4v" autoplay muted loop></video>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+    <div class="sec4">
+        <div>
+            <img class="sec_img" src="assests/images/cartoon_5.png" width="100%" alt="">
+        </div>
+        <div class="sec_pad">
+            <span class="head_line">Create profiles for kids</span><br><br>
+            <span class="sub_head">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</span>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+
+
+    <div class="sec5">
+        <span class="head_line">Frequently Asked Questions</span>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq1" onclick="fun1()">
+                <span>What is Netflix?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn1"></div>
+        </div>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq2" onclick="fun2()">
+                <span>How much does Netflix cost?</span>
+                <!-- <svg class="plus" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 1000 1000" width="40px" fill="#ffffff"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn2"></div>
+        </div>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq3" onclick="fun3()">
+                <span>Where can I watch?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn3"></div>
+        </div>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq4" onclick="fun4()">
+                <span>How do I cancel?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn4"></div>
+        </div>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq5" onclick="fun5()">
+                <span>What can I watch on Netflix?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn5"></div>
+        </div>
+
+        <div class = "faqbox">
+            <button class="sub_head" id="faq6" onclick="fun6()">
+                <span>Is Netflix good for kids?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
+                    <path d="M12 4V20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 12H20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="ans" id="faqn6"></div>
+        </div>
+
+        <span style="padding-top: 28px;" class="sub_sub_head">Ready to watch? Enter your email or mobile number to create or restart your membership.</span>
+        
+        <div class="email">
+            <input type="text" placeholder="Email Address or Mobile Number" name="" id="">
+            <button id="getStarted">Get Started ></button>
+        </div>
+    </div>
+    <hr color=#2B2B2B size=8px>
+
+    <!-- <footer>
+        <span>Questions? Call</span>
+        <div class="footer_col">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <div class="footer_col">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <div class="footer_col">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+        <div class="footer_col">
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+
+        <div class="footer_col">
+            <a href="">FAQ</a><br>
+            <a href="">Help Centre</a><br>
+            <a href="">Account</a><br>
+            <a href="">Media Centre</a><br>
+            <a href="">Investor Relation</a><br>
+            <a href="">Jobs</a><br>
+            <a href="">Ways to Watch</a><br>
+            <a href="">Terms of Use</a><br>
+            <a href="">Privacy</a><br>
+            <a href="">Cookie Preferences</a><br>
+            <a href="">Corporate Information</a><br>
+            <a href="">Contact Us</a><br>
+            <a href="">Speed Test</a><br>
+            <a href="">Legal Notices</a><br>
+            <a href="">Only on Netflix</a><br>
+        </div>
+    </footer> -->
+
+
+    <!-- External Link For The JavaScript File -->
+    <script src="javascriptPage.js"></script>
+</body>
+</html>
